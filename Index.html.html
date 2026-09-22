@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luminalia — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0a12;
+    --bg-2: #120f1c;
+    --ink: #f0ecf7;
+    --muted: #a89bc2;
+    --turquoise: #4fe0d4;
+    --pink: #ff8fd0;
+    --purple: #a880ff;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: border-box;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  body {
+    background:
+      radial-gradient(600px 400px at 20% 0%, rgba(168,128,255,0.16), transparent 60%),
+      radial-gradient(600px 500px at 85% 15%, rgba(79,224,212,0.12), transparent 60%),
+      radial-gradient(700px 600px at 50% 100%, rgba(255,143,208,0.10), transparent 60%),
+      var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 64px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .mark {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, var(--purple), var(--pink) 55%, var(--turquoise));
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: #0b0a12;
+    box-shadow: 0 0 40px rgba(168,128,255,0.35);
+  }
+  h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin: 0 0 6px;
+    background: linear-gradient(90deg, var(--turquoise), var(--pink) 50%, var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .handles {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 4px;
+  }
+  .tagline {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 36px;
+    line-height: 1.5;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(168,128,255,0.25);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+  }
+  .link:hover, .link:focus-visible {
+    border-color: var(--turquoise);
+    background: rgba(79,224,212,0.06);
+    transform: translateY(-1px);
+  }
+  .link:focus-visible { outline: 2px solid var(--turquoise); outline-offset: 2px; }
+  button.link {
+    font-family: inherit;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--turquoise);
+  }
+  .link:nth-child(2) .icon { color: var(--pink); }
+  .link:nth-child(3) .icon { color: var(--purple); }
+  .link:nth-child(4) .icon { color: var(--turquoise); }
+  .link:nth-child(5) .icon { color: var(--pink); }
+  .link:nth-child(6) .icon { color: var(--purple); }
+  .placeholder-note {
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--muted);
+    opacity: 0.7;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .link { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">L</div>
+    <h1>LUMINALIA</h1>
+    <p class="handles">Luma · Lumi</p>
+    <p class="tagline">deathcore vocalist · writer · gamer<br>Ontario, Canada</p>
+
+    <div class="links">
+      <a class="link" href="https://youtube.com/@luminaliatwilight" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.51 3.5 12 3.5 12 3.5s-7.51 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.49 20.5 12 20.5 12 20.5s7.51 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.5v-7l6.24 3.5-6.24 3.5z"/></svg>
+        <span>YouTube</span>
+      </a>
+      <a class="link" href="https://onlyfans.com/lumastarfire" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4.2" fill="#0b0a12"/></svg>
+        <span>OnlyFans</span>
+      </a>
+      <a class="link" href="https://throne.com/lumastarfire" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2v6.5c0 1.4.7 2.6 1.9 3.3L9 12.4V19H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-2v-6.6l1.1-.6c1.2-.7 1.9-1.9 1.9-3.3V2h-2v6.5c0 .6-.3 1.1-.8 1.4L12 11.3l-2.2-1.4c-.5-.3-.8-.8-.8-1.4V2H6z"/></svg>
+        <span>Throne</span>
+      </a>
+      <a class="link" href="https://x.com/Lumastarfire" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.5L23.3 22H16.7l-5.2-6.8L5.6 22H2.4l7.9-9.1L1.7 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.7L7.4 4H5.6l12.1 16z"/></svg>
+        <span>X</span>
+      </a>
+      <button class="link" type="button" onclick="navigator.clipboard.writeText('Lumastarfire').then(()=>{this.querySelector('span').textContent='Copied!'; setTimeout(()=>{this.querySelector('span').textContent='Discord — Lumastarfire'},1400)})">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.9-1.52.07.07 0 0 0-.08.04c-.21.38-.45.87-.61 1.26a18.3 18.3 0 0 0-5.48 0c-.17-.4-.4-.88-.62-1.26a.08.08 0 0 0-.08-.04c-1.7.29-3.35.8-4.9 1.52a.07.07 0 0 0-.03.03C.6 8.6-.36 12.72.1 16.78a.08.08 0 0 0 .03.06 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.23-2a.08.08 0 0 0-.04-.11 13.1 13.1 0 0 1-1.87-.89.08.08 0 0 1-.01-.13c.13-.09.25-.19.37-.28a.07.07 0 0 1 .08-.01c3.93 1.79 8.18 1.79 12.06 0a.07.07 0 0 1 .08.01c.12.1.24.19.37.28a.08.08 0 0 1-.01.13c-.6.35-1.22.65-1.87.89a.08.08 0 0 0-.04.11c.36.7.78 1.37 1.23 2a.08.08 0 0 0 .08.03 19.8 19.8 0 0 0 6-3.03.08.08 0 0 0 .03-.06c.55-4.7-.92-8.78-3.9-12.38a.06.06 0 0 0-.03-.03zM8.02 14.3c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.21 0 2.17 1.09 2.15 2.41 0 1.32-.95 2.4-2.15 2.4zm7.97 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.33.95-2.41 2.15-2.41 1.21 0 2.17 1.09 2.15 2.41 0 1.32-.94 2.4-2.15 2.4z"/></svg>
+        <span>Discord — Lumastarfire</span>
+      </button>
+    </div>
+    <p class="placeholder-note">tap Discord to copy the username</p>
+  </div>
+</body>
+</html>
